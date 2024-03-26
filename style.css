@@ -890,19 +890,21 @@ background-color: #ffffff;
 
 
 
-.wp-ab {
+.wp-ab a{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     position: fixed;
-    bottom: 30px;
-    right: 10px;
-    height: 65px;
-    width: 65px;
-    font-size: 48px;
+    bottom: 500px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
     z-index: 999;
-    background-color: #24CC63;
-    border-radius: 50%;
+    background-color: #0fad4c;
+    border-radius: 5px;
     color: #fff !important;
     box-shadow: 0 0 15px #00000020;
     animation: idle 1.3s ease infinite;

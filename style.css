@@ -22,6 +22,7 @@ nav{
     z-index: 999;
     
 }
+
 .nav-container{
     max-width: 100%;
     margin: auto;
@@ -876,38 +877,58 @@ background-color: #ffffff;
     position: relative;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     padding: 22px 30px;
     color: #000;
     margin-bottom: 0px;
-    background: #ebebeb;
+    background: #daeaff;
     cursor: pointer;
     font-size: 18px;
     border: 1px solid #ccc;
 }
 
-.faq-header:after {
-    position: absolute;
-    right: 30px;
-    content: '\2b';
-    color: #000;
-    font-size: 28px;
 
+
+.wp-ab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    height: 65px;
+    width: 65px;
+    font-size: 48px;
+    z-index: 999;
+    background-color: #24CC63;
+    border-radius: 50%;
+    color: #fff !important;
+    box-shadow: 0 0 15px #00000020;
+    animation: idle 1.3s ease infinite;
 }
-
-.faq-active .faq-header:after {
-
-    rotate: 45deg;
+@keyframes idle {
+    0% {
+            bottom: 30px;
+        }
+    
+        50% {
+            bottom: 25px;
+        }
+    
+        100% {
+            bottom: 30px;
+        }
 }
-
 .accordion-item {
-    margin-bottom: 8px;
+    margin-bottom: 50px;
     position: relative;
+   
 }
 
 .paragraph {
-    max-height: 0px;
-    height: 0%;
+   
+    height: 100%;
     overflow: auto;
     background: #fff;
     transition: 1s all;
